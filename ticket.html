@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1140, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="ticket">
+          <div class="main__decorations">
+            <div class="plane">
+              <div class="plane__trace">
+                <img src="./images/trace.png" alt="" />
+              </div>
+              <div class="plane__icon">
+                <img src="./images/plane-icon.png" alt="" />
+              </div>
+            </div>
+          </div>
+
+          <!-- Хедер: логотип + кнопка "Мои билеты" -->
+          <div class="header">
+            <div class="header__logo logo">
+              <div class="logo__plane">
+                <img src="./images/arrow.png" alt="" />
+              </div>
+              <div class="logo__letters">
+                <img src="./images/letters.png" alt="" />
+              </div>
+            </div>
+            <button class="header__button">Мои билеты</button>
+          </div>
+          <!-- Хедер: логотип + кнопка "Мои билеты" -->
+
+          <div class="ticket__title title">Информация о вашем путешествии:</div>
+          <!-- Белое поле с информацией -->
+          <div class="ticket__info info">
+            <!-- Код бронирования, статус, стоимость -->
+            <div class="ticket-info__top top">
+              <div class="top__item">
+                <div class="top__title">Код бронирования:</div>
+                <!-- Код бронирования  -->
+                <div class="top__data">QXRT27</div>
+                <!-- Код бронирования  -->
+              </div>
+              <div class="top__item">
+                <div class="top__title">Статус билета</div>
+                <!-- Статус билета: текст  -->
+                <div class="top__data">Оплачено</div>
+                <!-- Статус билета: текст  -->
+                <!-- Статус билета: иконка  -->
+                <div class="top__icon">
+                  <img src="./images/greenTick.png" alt="tick" />
+                </div>
+                <!-- Статус билета: иконка  -->
+              </div>
+              <div class="top__price price">
+                <div class="price__title">Стоимость</div>
+                <div class="price__sum">
+                  <!-- Стоимость билета  -->
+                  <span class="price__number">20 250 </span>
+                  <!-- Стоимость билета  -->
+                  <span class="price__currency">руб</span>
+                </div>
+              </div>
+            </div>
+            <!-- Код бронирования, статус, стоимость -->
+
+            <!-- Контейнер для билетов -->
+            <ul class="tickets">
+              <!-- Билет -->
+              <li class="tickets__info info">
+                <!-- Информация о перелете: дата, номер рейса -->
+                <div class="info__middle middle">
+                  <div class="middle__subtitle subtitle">
+                    <div class="subtitle__text">Перелет</div>
+                    <div class="departure__city">
+                      <!-- Город вылета: имя  -->
+                      <span class="departure__city-name">Omsk</span>
+                      <!-- Город вылета: имя  -->
+                      <!-- Город вылета: iata  -->
+                      <span class="departure__city-iata">OMS </span>
+                      <!-- Город вылета: iata  -->
+                    </div>
+                    <div class="subtitle__dash">-</div>
+                    <div class="arrival__city">
+                      <!-- Город прилета : имя  -->
+                      <span class="arrival-name">Tomsk</span>
+                      <!-- Город прилета : имя  -->
+                      <!-- Город прилета : iata  -->
+                      <span class="arrival-iata">TMS</span>
+                      <!-- Город прилета : iata  -->
+                    </div>
+                  </div>
+                  <ul class="middle__info">
+                    <li class="middle__item item">
+                      <div class="item__title">Дата и время вылета</div>
+                      <!-- Дата и время вылета  -->
+                      <div class="item__data">28.02.2022 5:057</div>
+                      <!-- Дата и время вылета  -->
+                    </li>
+                    <li class="middle__item item">
+                      <div class="item__title">Дата и время прилета</div>
+                      <!-- Дата и время прилета  -->
+                      <div class="item__data">28.02.2022 7:05</div>
+                      <!-- Дата и время прилета  -->
+                    </li>
+                    <li class="middle__item item">
+                      <div class="item__title">Номер рейса</div>
+                      <!-- Номер рейса  -->
+                      <div class="item__data">АЕ543</div>
+                      <!-- Номер рейса  -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- Информация о перелете: дата, номер рейса -->
+
+                <!-- Информация о пассажирах -->
+                <ul class="passengers__list">
+                  <!-- Информация о пассажире -->
+                  <li class="info__bottom bottom">
+                    <div class="bottom__passenger passenger">
+                      <div class="passenger__subtitle subtitle">
+                        <span class="subtitle__passenger-title"
+                          >Пассажир №</span>
+                        <!-- Номер пассажира  -->
+                        <span class="subtitle__passenger-number">1</span>
+                        <!-- Номер пассажира  -->
+                      </div>
+                      <div class="passenger__rate rate">
+                        <div class="rate__text">Тариф:</div>
+                        <!-- Название тарифа -->
+                        <div class="rate__data">Взрослый, эконом</div>
+                        <!-- Название тарифа -->
+                      </div>
+                    </div>
+                    <div class="bottom__info">
+                      <div class="bottom__item">
+                        <div class="item__label">Фамилия</div>
+                        <!-- Фамилия  -->
+                        <div class="item__information">IVANOV</div>
+                        <!-- Фамилия  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Имя и Отчество</div>
+                        <!-- Имя и отчество  -->
+                        <div class="item__information">IVAN IVANOVICH</div>
+                        <!-- Имя и отчество  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Дата рождения</div>
+                        <!-- Дата рождения  -->
+                        <div class="item__information">27.02.1987</div>
+                        <!-- Дата рождения  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Серия и номер документа</div>
+                        <!-- Серия и номер документа  -->
+                        <div class="item__information">0000 000001</div>
+                         <!-- Серия и номер документа  -->
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Информация о пассажире -->
+                  <!-- Информация о пассажире -->
+                  <li class="info__bottom bottom">
+                    <div class="bottom__passenger passenger">
+                      <div class="passenger__subtitle subtitle">
+                        <span class="subtitle__passenger-title"
+                          >Пассажир №</span>
+                        <!-- Номер пассажира  -->
+                        <span class="subtitle__passenger-number">1</span>
+                        <!-- Номер пассажира  -->
+                      </div>
+                      <div class="passenger__rate rate">
+                        <div class="rate__text">Тариф:</div>
+                        <!-- Название тарифа -->
+                        <div class="rate__data">Взрослый, эконом</div>
+                        <!-- Название тарифа -->
+                      </div>
+                    </div>
+                    <div class="bottom__info">
+                      <div class="bottom__item">
+                        <div class="item__label">Фамилия</div>
+                        <!-- Фамилия  -->
+                        <div class="item__information">IVANOV</div>
+                        <!-- Фамилия  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Имя и Отчество</div>
+                        <!-- Имя и отчество  -->
+                        <div class="item__information">IVAN IVANOVICH</div>
+                        <!-- Имя и отчество  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Дата рождения</div>
+                        <!-- Дата рождения  -->
+                        <div class="item__information">27.02.1987</div>
+                        <!-- Дата рождения  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Серия и номер документа</div>
+                        <!-- Серия и номер документа  -->
+                        <div class="item__information">0000 000001</div>
+                         <!-- Серия и номер документа  -->
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Информация о пассажире -->
+                </ul>
+                <!-- Информация о пассажирах -->
+              </li>
+              <!-- Билет -->
+              <!-- Обратный билет -->
+              <li class="tickets__info info">
+                <!-- Информация о перелете: дата, номер рейса -->
+                <div class="info__middle middle">
+                  <div class="middle__subtitle subtitle">
+                    <div class="subtitle__text">Перелет</div>
+                    <div class="departure__city">
+                      <!-- Город вылета: имя  -->
+                      <span class="departure__city-name">Omsk</span>
+                      <!-- Город вылета: имя  -->
+                      <!-- Город вылета: iata  -->
+                      <span class="departure__city-iata">OMS </span>
+                      <!-- Город вылета: iata  -->
+                    </div>
+                    <div class="subtitle__dash">-</div>
+                    <div class="arrival__city">
+                      <!-- Город прилета : имя  -->
+                      <span class="arrival-name">Tomsk</span>
+                      <!-- Город прилета : имя  -->
+                      <!-- Город прилета : iata  -->
+                      <span class="arrival-iata">TMS</span>
+                      <!-- Город прилета : iata  -->
+                    </div>
+                  </div>
+                  <ul class="middle__info">
+                    <li class="middle__item item">
+                      <div class="item__title">Дата и время вылета</div>
+                      <!-- Дата и время вылета  -->
+                      <div class="item__data">28.02.2022 5:057</div>
+                      <!-- Дата и время вылета  -->
+                    </li>
+                    <li class="middle__item item">
+                      <div class="item__title">Дата и время прилета</div>
+                      <!-- Дата и время прилета  -->
+                      <div class="item__data">28.02.2022 7:05</div>
+                      <!-- Дата и время прилета  -->
+                    </li>
+                    <li class="middle__item item">
+                      <div class="item__title">Номер рейса</div>
+                      <!-- Номер рейса  -->
+                      <div class="item__data">АЕ543</div>
+                      <!-- Номер рейса  -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- Информация о перелете: дата, номер рейса -->
+
+                <!-- Информация о пассажирах -->
+                <ul class="passengers__list">
+                  <!-- Информация о пассажире -->
+                  <li class="info__bottom bottom">
+                    <div class="bottom__passenger passenger">
+                      <div class="passenger__subtitle subtitle">
+                        <span class="subtitle__passenger-title"
+                          >Пассажир №</span>
+                        <!-- Номер пассажира  -->
+                        <span class="subtitle__passenger-number">1</span>
+                        <!-- Номер пассажира  -->
+                      </div>
+                      <div class="passenger__rate rate">
+                        <div class="rate__text">Тариф:</div>
+                        <!-- Название тарифа -->
+                        <div class="rate__data">Взрослый, эконом</div>
+                        <!-- Название тарифа -->
+                      </div>
+                    </div>
+                    <div class="bottom__info">
+                      <div class="bottom__item">
+                        <div class="item__label">Фамилия</div>
+                        <!-- Фамилия  -->
+                        <div class="item__information">IVANOV</div>
+                        <!-- Фамилия  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Имя и Отчество</div>
+                        <!-- Имя и отчество  -->
+                        <div class="item__information">IVAN IVANOVICH</div>
+                        <!-- Имя и отчество  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Дата рождения</div>
+                        <!-- Дата рождения  -->
+                        <div class="item__information">27.02.1987</div>
+                        <!-- Дата рождения  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Серия и номер документа</div>
+                        <!-- Серия и номер документа  -->
+                        <div class="item__information">0000 000001</div>
+                         <!-- Серия и номер документа  -->
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Информация о пассажире -->
+                  <!-- Информация о пассажире -->
+                  <li class="info__bottom bottom">
+                    <div class="bottom__passenger passenger">
+                      <div class="passenger__subtitle subtitle">
+                        <span class="subtitle__passenger-title"
+                          >Пассажир №</span>
+                        <!-- Номер пассажира  -->
+                        <span class="subtitle__passenger-number">1</span>
+                        <!-- Номер пассажира  -->
+                      </div>
+                      <div class="passenger__rate rate">
+                        <div class="rate__text">Тариф:</div>
+                        <!-- Название тарифа -->
+                        <div class="rate__data">Взрослый, эконом</div>
+                        <!-- Название тарифа -->
+                      </div>
+                    </div>
+                    <div class="bottom__info">
+                      <div class="bottom__item">
+                        <div class="item__label">Фамилия</div>
+                        <!-- Фамилия  -->
+                        <div class="item__information">IVANOV</div>
+                        <!-- Фамилия  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Имя и Отчество</div>
+                        <!-- Имя и отчество  -->
+                        <div class="item__information">IVAN IVANOVICH</div>
+                        <!-- Имя и отчество  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Дата рождения</div>
+                        <!-- Дата рождения  -->
+                        <div class="item__information">27.02.1987</div>
+                        <!-- Дата рождения  -->
+                      </div>
+                      <div class="bottom__item">
+                        <div class="item__label">Серия и номер документа</div>
+                        <!-- Серия и номер документа  -->
+                        <div class="item__information">0000 000001</div>
+                         <!-- Серия и номер документа  -->
+                      </div>
+                    </div>
+                  </li>
+                  <!-- Информация о пассажире -->
+                </ul>
+                <!-- Информация о пассажирах -->
+              </li>
+              <!-- Обратный билет -->
+            </ul>
+            <!-- Контейнер для билетов -->
+          </div>
+          <!-- Белое поле с информацией -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
